@@ -39,5 +39,7 @@ services:
       - "DB_USER=keycloak"
       - "DB_PASSWORD=keycloak"
       - "PROXY_ADDRESS_FORWARDING=true"
+    volumes:
+      - ./keycloak-spi-kafka/target/keycloak-spi-kafka.jar:/opt/jboss/keycloak/standalone/deployments/keycloak-spi-kafka.jar
     depends_on:
       - auth-db
