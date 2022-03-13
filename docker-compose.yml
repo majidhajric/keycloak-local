@@ -41,5 +41,7 @@ services:
       - "PROXY_ADDRESS_FORWARDING=true"
     volumes:
       - ./keycloak-spi-kafka/target/keycloak-spi-kafka.jar:/opt/jboss/keycloak/standalone/deployments/keycloak-spi-kafka.jar
+      - ./scripts/disable-theme-cache.cli:/opt/jboss/startup-scripts/disable-theme-cache.cli
+      - ./material-kit-theme/theme:/opt/jboss/keycloak/themes/material-theme
     depends_on:
       - auth-db

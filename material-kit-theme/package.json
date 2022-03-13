@@ -1,0 +1,46 @@
+{
+  "name": "serendipity-keycloak-theme",
+  "version": "0.0.1",
+  "description": "A Keycloak theme for Serendipity's Identity Server",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robinyo/serendipity-keycloak-theme.git"
+  },
+  "scripts": {
+    "sass": "sass -w -I theme/login/resources/scss -I node_modules/ theme/login/resources/scss/login.scss:theme/login/resources/css/login.css"
+  },
+  "type": "commonjs",
+  "browserslist": [],
+  "keywords": [
+    "Keycloak",
+    "Material Web Components",
+    "Serendipity"
+  ],
+  "author": "Rob Ferguson",
+  "homepage": "https://github.com/Robinyo/serendipity",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=14.18.1",
+    "npm": ">=8.1.4"
+  },
+  "dependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-flatten": "^0.4.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-open": "^3.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-wait": "^0.0.2",
+    "gulp4-run-sequence": "^1.0.1",
+    "material-kit": "^2.0.4",
+    "source-map-resolve": "^0.6.0"
+  },
+  "devDependencies": {
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0"
+  }
+}
